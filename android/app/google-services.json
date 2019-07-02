@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "743919633104",
+    "firebase_url": "https://turistainfo-77007.firebaseio.com",
+    "project_id": "turistainfo-77007",
+    "storage_bucket": "turistainfo-77007.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:743919633104:android:7d47116fcad8164b",
+        "android_client_info": {
+          "package_name": "ale.alejandro.turistainfo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "743919633104-nc5dop1rq5rka33v1l732d85hft05rml.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9XZeyy26iCFTM0HgzxL_M7V7pB59Y928"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
