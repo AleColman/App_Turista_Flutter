@@ -8,7 +8,7 @@ class MenuDrawer extends StatefulWidget {
 class _MenuDrawerState extends State<MenuDrawer> {
   Drawer _getDrawer(BuildContext context){
 
-    //var header = new DrawerHeader(
+    //var header = new DrawerHeader( 
     //  child: new Text('Información al Turista'),
     //);
     var info = new AboutListTile(
@@ -45,6 +45,7 @@ class _MenuDrawerState extends State<MenuDrawer> {
       _getItem(new Icon(Icons.book), 'Derechos del Consumidor', "/derechos"),
       _getItem(new Icon(Icons.warning), 'Prevenir', "/prevenir"),
       _getItem(new Icon(Icons.message), 'Consultas - Reclamos', "/consultas"),
+      _getItem(new Icon(Icons.message), 'Historial de Chat', "/mensajes"),
       _getItem(new Icon(Icons.phone), 'Contactos', "/contactos"),
       info
     ],

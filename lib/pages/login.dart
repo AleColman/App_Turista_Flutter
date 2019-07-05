@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:appturistainfo/behavior/hidenScrollBehavior.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -10,9 +11,14 @@ class _LoginPageState extends State<LoginPage> {
   
   final _formkey =GlobalKey<FormState>();
   final _scaffoldKey = GlobalKey<ScaffoldState>();
+  //
+  final FirebaseAuth firebaseAuth = FirebaseAuth.instance;
+  SharedPreferences prefs;
+  FirebaseUser currentUser;
+  
+  //
   String _email;
   String _password;
-
   bool _isLoginIn=false;
   
     _login() async{
@@ -20,7 +26,9 @@ class _LoginPageState extends State<LoginPage> {
     setState(() {
      _isLoginIn=true; 
     });
-
+    //
+    prefs = await SharedPreferences.getInstance();
+    //
     _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text('Iniciando Sesion...'),) );
 
     final form = _formkey.currentState;
@@ -65,7 +73,7 @@ class _LoginPageState extends State<LoginPage> {
   Widget build(BuildContext context) {
    return Scaffold(
      key: _scaffoldKey,
-     appBar: AppBar(title: Text('Login'),),
+     appBar: AppBar(title: Text('Iniciar Sesión'),),
     body: Container(
       padding: EdgeInsets.all(20.0),
       child: ScrollConfiguration(
@@ -80,10 +88,6 @@ class _LoginPageState extends State<LoginPage> {
                           height: 250.0,
                           
                           ),
-              //FlutterLogo(
-               // style: FlutterLogoStyle.markOnly,
-                //size: 200.0,
-              //),
               TextFormField(
                 autocorrect: false,
                 keyboardType: TextInputType.emailAddress,

@@ -8,6 +8,7 @@ import 'package:appturistainfo/pages/derechos.dart';
 import 'package:appturistainfo/pages/prevenir.dart';
 import 'package:appturistainfo/pages/consultas.dart';
 import 'package:appturistainfo/pages/contactos.dart';
+import 'package:appturistainfo/pages/mismensajes.dart';
 Map<String, WidgetBuilder> builAppRoutes(){
   return{
     '/login': (BuildContext context) =>  LoginPage(),
@@ -18,7 +19,8 @@ Map<String, WidgetBuilder> builAppRoutes(){
     '/derechos': (BuildContext context) =>  Derechos(),
     '/prevenir': (BuildContext context) =>  Prevenir(),
     '/consultas': (BuildContext context) =>  Consultas(),
+    '/mensajes': (BuildContext context) =>  MisMensajes(),
     '/contactos': (BuildContext context) =>  Contactos(),
 
   };
-}
+} 

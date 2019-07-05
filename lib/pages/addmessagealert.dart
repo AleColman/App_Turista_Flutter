@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'package:appturistainfo/behavior/hidenScrollBehavior.dart';
-
 class AddMessageAlert extends StatefulWidget {
   @override
   _AddMessageAlertState createState() => new _AddMessageAlertState();

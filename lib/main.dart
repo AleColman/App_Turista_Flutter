@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:appturistainfo/pages/registro.dart';
 import 'package:appturistainfo/pages/routes.dart';
@@ -11,7 +13,7 @@ import 'package:appturistainfo/pages/menuDrawer.dart';
     home: Inicio(),
    ));
  }
-
+ 
  class Inicio extends StatefulWidget {
    @override
    _InicioState createState() => new _InicioState();
