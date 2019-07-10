@@ -65,6 +65,44 @@ class _DerechosState extends State<Derechos> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     SectionCard(
+                        new Image.asset(
+                            'assets/images/publi.jpg', 
+                          ),
+                        Text(
+                          "El consumidor tiene derecho a la adecuada protección contra toda publicidad engañosa.",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                      Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                        new Image.asset(
+                            'assets/images/publi.jpg', 
+                          ),
+                        Text(
+                          "El consumidor tiene derecho a la adecuada protección contra toda publicidad engañosa.",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                      Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
                         Icon(
                           Icons.looks_two,
                           size: 80.0,
@@ -100,7 +138,7 @@ class SectionCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: const EdgeInsets.all(2.0),
       child: Card(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8.0)),
         elevation: 4.0,
