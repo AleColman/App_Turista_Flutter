@@ -21,7 +21,7 @@ class MisMensajes extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(
-          'CHAT', style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+          'CHAT', style: TextStyle(color: primaryColor, fontWeight: FontWeight.bold),
         ), 
         centerTitle: true,
       ),
@@ -170,11 +170,11 @@ class _ChatScreenState extends State<ChatScreen> {
           ? Container(
             child: Text(
               document['content'],
-              style: TextStyle(color: Colors.blueAccent),
+              style: TextStyle(color: primaryColor),
             ),
             padding: EdgeInsets.fromLTRB(15.0, 10.0, 15.0, 10.0),
             width: 200.0,
-            decoration: BoxDecoration(color: Colors.grey, borderRadius: BorderRadius.circular(8.0)),
+            decoration: BoxDecoration(color: greyColor2, borderRadius: BorderRadius.circular(8.0)),
             margin: EdgeInsets.only(bottom: isLastMessageRight(index) ? 20.0 : 10.0, right: 10.0),
           )
           : document['type'] == 1
@@ -184,14 +184,14 @@ class _ChatScreenState extends State<ChatScreen> {
               child: CachedNetworkImage(
                 placeholder: (context, url) => Container(
                   child: CircularProgressIndicator(
-                    valueColor: AlwaysStoppedAnimation<Color>(Colors.blueAccent),
+                    valueColor: AlwaysStoppedAnimation<Color>(themeColor),
 
                   ),
                   width: 200.0,
                   height: 200.0,
                   padding: EdgeInsets.all(70.0),
                   decoration: BoxDecoration(
-                    color: Colors.grey,
+                    color: greyColor2,
                     borderRadius: BorderRadius.all(
                       Radius.circular(8.0),
                     ),
@@ -554,7 +554,7 @@ class _ChatScreenState extends State<ChatScreen> {
                 style: TextStyle(color: primaryColor, fontSize: 15.0),
                 controller: textEditingController,
                 decoration: InputDecoration.collapsed(
-                  hintText: 'Type your message...',
+                  hintText: 'Escribir mensaje...',
                   hintStyle: TextStyle(color: greyColor),
                 ),
                 focusNode: focusNode,

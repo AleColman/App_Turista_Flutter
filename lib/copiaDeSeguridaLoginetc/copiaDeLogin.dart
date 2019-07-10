@@ -48,7 +48,7 @@ class _LoginPageState extends State<LoginPage> {
     if(_isLoginIn){
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => Inicio(currentUserId: prefs.getString('id'))),
+        MaterialPageRoute(builder: (context) => MainScreen(currentUserId: prefs.getString('id'))),
       );
     } //return;
     this.setState(() {
@@ -104,7 +104,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => Inicio(
+            builder: (context) => MainScreen(
                   currentUserId: firebaseUser.uid,
                 )),
       );

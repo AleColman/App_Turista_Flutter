@@ -19,7 +19,7 @@ Map<String, WidgetBuilder> builAppRoutes(){
     '/derechos': (BuildContext context) =>  Derechos(),
     '/prevenir': (BuildContext context) =>  Prevenir(),
     '/consultas': (BuildContext context) =>  Consultas(),
-    '/mensajes': (BuildContext context) =>  MisMensajes(),
+    '/mensajes': (BuildContext context) =>  MisMensajes(peerAvatar: null, peerId: null,),
     '/contactos': (BuildContext context) =>  Contactos(),
 
   };

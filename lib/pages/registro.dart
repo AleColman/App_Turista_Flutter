@@ -38,7 +38,7 @@ class _RegistroPageState extends State<RegistroPage> {
 
     try {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(email: _email, password: _password);
-      Navigator.of(context).pushReplacementNamed('/maintabs');
+      Navigator.of(context).pushReplacementNamed('/menuDrawer');
     } catch (e) {
        _scaffoldKey.currentState.hideCurrentSnackBar();
        _scaffoldKey.currentState.showSnackBar(SnackBar(content: Text(e.message), duration: Duration(seconds: 10),
