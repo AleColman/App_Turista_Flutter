@@ -21,7 +21,7 @@ class MisMensajes extends StatelessWidget {
     return new Scaffold(
       appBar: new AppBar(
         title: new Text(
-          'CHAT', style: TextStyle(color: primaryColor, fontWeight: FontWeight.bold),
+          'Consultas - Reclamos', style: TextStyle(color: primaryColor, fontWeight: FontWeight.bold),
         ), 
         centerTitle: true,
       ),
@@ -526,7 +526,7 @@ class _ChatScreenState extends State<ChatScreen> {
           // Button send image
           Material(
             child: new Container(
-              margin: new EdgeInsets.symmetric(horizontal: 1.0),
+              //margin: new EdgeInsets.symmetric(horizontal: 1.0),
               child: new IconButton(
                 icon: new Icon(Icons.image),
                 onPressed: getImage,
@@ -537,15 +537,26 @@ class _ChatScreenState extends State<ChatScreen> {
           ),
           Material(
             child: new Container(
-              margin: new EdgeInsets.symmetric(horizontal: 1.0),
+              //margin: new EdgeInsets.symmetric(horizontal: 1.0),
               child: new IconButton(
-                icon: new Icon(Icons.face),
+                icon: new Icon(Icons.location_on),
                 onPressed: getSticker,
                 color: primaryColor,
               ),
             ),
             color: Colors.white,
           ),
+          //Material(
+           // child: new Container(
+             // margin: new EdgeInsets.symmetric(horizontal: 1.0),
+              //child: new IconButton(
+               // icon: new Icon(Icons.face),
+              //  onPressed: getSticker,
+              //  color: primaryColor,
+             //// ),
+            //),
+           // color: Colors.white,
+          //),
 
           // Edit text
           Flexible(
@@ -574,6 +585,7 @@ class _ChatScreenState extends State<ChatScreen> {
             ),
             color: Colors.white,
           ),
+          
         ],
       ),
       width: double.infinity,
@@ -593,7 +605,7 @@ class _ChatScreenState extends State<ChatScreen> {
                   .document(groupChatId)
                   .collection(groupChatId)
                   .orderBy('timestamp', descending: true)
-                  .limit(20)
+                  .limit(50)
                   .snapshots(),
               builder: (context, snapshot) {
                 if (!snapshot.hasData) {

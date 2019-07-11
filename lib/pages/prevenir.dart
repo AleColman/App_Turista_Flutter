@@ -87,7 +87,7 @@ class _PrevenirState extends State<Prevenir> {
                             'assets/images/porcentaje.png', 
                           ),
                         Text(
-                          "No pague un porcentaje más en las compras con tarjeta de credito o debito, está prohibido cobrar un recargo en las compras con tarjeta",
+                          "No pague un porcentaje más en las compras con tarjeta de credito o debito, está prohibido cobrar un recargo en las compras con tarjeta0",
                           style: TextStyle(fontSize: 18.0),
                         ), 
                         () {

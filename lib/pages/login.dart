@@ -231,10 +231,10 @@ class _LoginPageState extends State<LoginPage> {
       child: Icon(Icons.account_circle),
     ),
     persistentFooterButtons: <Widget>[
-      FlatButton(onPressed: (){
+      RaisedButton(onPressed: (){
         Navigator.of(context).pop();
       },
-      child: Text(' No tengo una cuenta !'),)
+      child: Text(' No tengo una cuenta !', style: TextStyle(color: Colors.white)),)
     ],
    );
   }

@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:appturistainfo/behavior/hidenScrollBehavior.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -75,13 +76,8 @@ class _RegistroPageState extends State<RegistroPage> {
               new Image.asset(
                             'assets/images/logo3.png', 
                           width: 100.0,
-                          height: 250.0,
-                          
+                          height: 250.0, 
                           ),
-              //FlutterLogo(
-                //style: FlutterLogoStyle.markOnly,
-               //size: 200.0,
-              //),
               TextFormField(
                 autocorrect: false,
                 keyboardType: TextInputType.emailAddress,
@@ -130,11 +126,13 @@ class _RegistroPageState extends State<RegistroPage> {
       },
       child: Icon(Icons.person_add),
     ),
-    persistentFooterButtons: <Widget>[
-      FlatButton(onPressed: (){
+ 
+   persistentFooterButtons: <Widget>[
+     
+      RaisedButton(onPressed: (){
         Navigator.of(context).pushNamed('/login');
       },
-      child: Text(' Ya estoy registrado !'),)
+      child: Text(' Ya estoy registrado !', style: TextStyle(color: Colors.white)),)
     ],
    );
   }
