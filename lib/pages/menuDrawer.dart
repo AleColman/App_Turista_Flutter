@@ -85,12 +85,22 @@ class _MenuDrawerState extends State<MenuDrawer> {
                 padding: EdgeInsets.symmetric(vertical: 20.0),
                 child: Text('Ciudad del Este - Py', style: TextStyle(color: Colors.black), textAlign: TextAlign.center,),
               ), 
-               new ListTile(title: Text('Informese para prevenir estafas en sus compras', style: TextStyle(color: Colors.redAccent),), leading: new Icon(Icons.info_outline, color: Colors.redAccent,),),
-                Padding(padding: EdgeInsets.symmetric(vertical: 20.0),
+               new ListTile(title: Text('Estar bien informado es la mejor prevención',style: TextStyle(fontWeight: FontWeight.bold),), leading: new Icon(Icons.check_box, color: Colors.black),),
+                //Padding(padding: EdgeInsets.symmetric(vertical: 20.0),
                 
-                ),
+                //),
+                new ListTile(title: Text('infórmese sobre sus derechos',style: TextStyle(fontWeight: FontWeight.bold),), leading: new Icon(Icons.check_box, color: Colors.black),),
+                //Padding(padding: EdgeInsets.symmetric(vertical: 20.0),
                 
-   
+               // ),
+                new ListTile(title: Text('Realice sus Consultas y Reclamos ',style: TextStyle(fontWeight: FontWeight.bold),), leading: new Icon(Icons.check_box, color: Colors.black),),
+                //Padding(padding: EdgeInsets.symmetric(vertical: 10.0),
+                
+                //),
+                new ListTile(title: Text('"USTED NO ESTA SOLO , DEFIENDA SUS DERECHOS"',style: TextStyle(fontWeight: FontWeight.bold),), leading: new Icon(Icons.check_box, color: Colors.black),),
+                //Padding(padding: EdgeInsets.symmetric(vertical: 20.0),
+                
+                //),
            ],
          ),
        ),

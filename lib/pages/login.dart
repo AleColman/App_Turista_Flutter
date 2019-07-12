@@ -55,9 +55,11 @@ class _LoginPageState extends State<LoginPage> {
      _isLoginIn=false; 
     });
     //
-    Future<Null> handleSignIn() async {
-    prefs = await SharedPreferences.getInstance();
-
+    Future<Null> handleemailSignIn(String email, String password) async {//codigo de prueba para obtner usuario
+    //prefs = await SharedPreferences.getInstance();
+    FirebaseUser user = await firebaseAuth.signInWithEmailAndPassword(//codigo de prueba para obtner usuario
+      email: email, password: password//codigo de prueba para obtner usuario
+    );
     this.setState(() {
       isLoading = true;
     });

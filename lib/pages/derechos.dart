@@ -104,7 +104,7 @@ class _DerechosState extends State<Derechos> {
                   children: <Widget>[
                     SectionCard(
                         Icon(
-                          Icons.looks_two,
+                          Icons.looks_one,
                           size: 80.0,
                         ),
                         Text(

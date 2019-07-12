@@ -34,7 +34,7 @@ class _ContactosState extends State<Contactos> {
                new ListTile(title: Text('(061) 500 - 805'), leading: new Icon(Icons.phone, color: Colors.black,),),
                new ListTile(title: Text('07:00hs - 13:00hs.'), leading: new Icon(Icons.access_time, color: Colors.black,),),
                new ListTile(title: Text('defensadelconsumidor_mcde@hotmail.com'), leading: new Icon(Icons.mail_outline, color: Colors.black,),),
-               new ListTile(title: Text('Avda. Pioneros del Este, frente a Copaco'), leading: new Icon(Icons.location_on, color: Colors.black,),),
+               new ListTile(title: Text('Gral Bernardino Caballero, Cd. del Este'), leading: new Icon(Icons.location_on, color: Colors.black,),),
                 
             ],
             
