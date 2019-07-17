@@ -65,11 +65,11 @@ class _DerechosState extends State<Derechos> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     SectionCard(
-                        new Image.asset(
-                            'assets/images/publi.jpg', 
+                       new Image.asset(
+                            'assets/images/prote.jpg', 
                           ),
                         Text(
-                          "El consumidor tiene derecho a la adecuada protección contra toda publicidad engañosa.",
+                          "La protección de la vida, la salud y la seguridad contra los riesgos provocados por la provisión de productos y la prestación de servicios conciderados nocivos o peligrosos",
                           style: TextStyle(fontSize: 18.0),
                         ), 
                         () {
@@ -84,11 +84,11 @@ class _DerechosState extends State<Derechos> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     SectionCard(
-                        new Image.asset(
-                            'assets/images/publi.jpg', 
+                       new Image.asset(
+                            'assets/images/dibu.png', 
                           ),
                         Text(
-                          "El consumidor tiene derecho a la adecuada protección contra toda publicidad engañosa.",
+                          "La adecuada educación y divulgación sobre las caracteristicas de los productos y servicios ofertados en el mercado, asegurando a los consumidores la libertad de decidir ",
                           style: TextStyle(fontSize: 18.0),
                         ), 
                         () {
@@ -103,10 +103,67 @@ class _DerechosState extends State<Derechos> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     SectionCard(
-                        Icon(
-                          Icons.looks_one,
-                          size: 80.0,
-                        ),
+                       new Image.asset(
+                            'assets/images/info.jpg', 
+                          ),
+                        Text(
+                          "La información clara sobre los diferentes productos y servicios con las correspondientes especificaciones sobre la composición, calidad, precio y riesgos que presenten.",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                      Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                       new Image.asset(
+                            'assets/images/preve.png', 
+                          ),
+                        Text(
+                          "La efectiva prevención y reparación de los daños patrimoniales y morales o de los interese difusos ocacionados a los consumidores, ya sean individuales o colectivos",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                      Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                       new Image.asset(
+                            'assets/images/ser.png', 
+                          ),
+                        Text(
+                          "La adecuada y eficaz prestación de los servicios públicos por sus proveedores, sean estos públicos o privados",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                      Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                        new Image.asset(
+                            'assets/images/ofer.jpg', 
+                          ),
                         Text(
                           "Recibir el producto o servicio publicitado en el tiempo, cantidad, calidad y precio prometidos.",
                           style: TextStyle(fontSize: 18.0),

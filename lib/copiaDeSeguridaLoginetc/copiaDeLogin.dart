@@ -48,16 +48,18 @@ class _LoginPageState extends State<LoginPage> {
     if(_isLoginIn){
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => MainScreen(currentUserId: prefs.getString('id'))),
+        MaterialPageRoute(builder: (context) => Inicio(currentUserId: prefs.getString('id'))),
       );
     } //return;
     this.setState(() {
      _isLoginIn=false; 
     });
     //
-    Future<Null> handleSignIn() async {
-    prefs = await SharedPreferences.getInstance();
-
+    Future<Null> handleemailSignIn(String email, String password) async {//codigo de prueba para obtner usuario
+    //prefs = await SharedPreferences.getInstance();
+    FirebaseUser user = await firebaseAuth.signInWithEmailAndPassword(//codigo de prueba para obtner usuario
+      email: email, password: password//codigo de prueba para obtner usuario
+    );
     this.setState(() {
       isLoading = true;
     });
@@ -104,7 +106,7 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.push(
         context,
         MaterialPageRoute(
-            builder: (context) => MainScreen(
+            builder: (context) => Inicio(
                   currentUserId: firebaseUser.uid,
                 )),
       );
@@ -231,10 +233,10 @@ class _LoginPageState extends State<LoginPage> {
       child: Icon(Icons.account_circle),
     ),
     persistentFooterButtons: <Widget>[
-      FlatButton(onPressed: (){
+      RaisedButton(onPressed: (){
         Navigator.of(context).pop();
       },
-      child: Text(' No tengo una cuenta !'),)
+      child: Text(' No tengo una cuenta !', style: TextStyle(color: Colors.white)),)
     ],
    );
   }

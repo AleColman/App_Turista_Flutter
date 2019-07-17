@@ -87,7 +87,64 @@ class _PrevenirState extends State<Prevenir> {
                             'assets/images/porcentaje.png', 
                           ),
                         Text(
-                          "No pague un porcentaje más en las compras con tarjeta de credito o debito, está prohibido cobrar un recargo en las compras con tarjeta0",
+                          "No pague un porcentaje más en las compras con tarjeta de credito o debito, está prohibido cobrar un recargo en las compras con tarjeta",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                     Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+               Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                        new Image.asset(
+                            'assets/images/fac.jpg', 
+                          ),
+                        Text(
+                          "Solicitar siempre Factura Legal de la compra",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                     Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                        new Image.asset(
+                            'assets/images/control.jpg', 
+                          ),
+                        Text(
+                          "Verifique bien el producto antes de retirarla.",
+                          style: TextStyle(fontSize: 18.0),
+                        ), 
+                        () {
+                     Navigator.pushNamed(context, '');
+                    }
+                    ),
+                  ],
+                ),
+              ),
+                Container(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: <Widget>[
+                    SectionCard(
+                        new Image.asset(
+                            'assets/images/descuentos.jpg', 
+                          ),
+                        Text(
+                          "Si te ofrecen un descuento, deben aclararte el precio anterior",
                           style: TextStyle(fontSize: 18.0),
                         ), 
                         () {
